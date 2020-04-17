@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+                        
+        <title>Critiqueue</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="media" style="margin-left: 11.5%; margin-top: 10px;">
+                    <img src="images/logo.png" class="mr-3" alt="logo" height="70">
+                </div>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item" style="margin-left: 20%;">
+                        <a class="nav-link">Latest</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 30%;">
+                        <a class="nav-link" href="reviews.php">Reviews</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 30%;">
+                        <a class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 30%;">
+                        <a class="nav-link">Help</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 30%;">
+                        <a class="nav-link">Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex-grid">
+            <div class="text-left col1">
+                <div class="signup">
+                    <p style="font-family: AvenirNext; font-size: 20px;">INTRODUCING</p>
+                    <h1 style="font-family: AvenirNext; font-size: 50px;">Critiqueue</h1>
+                    <p style="font-family: AvenirNext; font-size: 20px;">The new home for music reviews</p>
+                    <button id="getStartedBtn" class="btn btn-success my-2 my-sm-0" type="submit">Get Started</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left: 12px;" type="submit">Login</button>
+                </div>
+            </div>
+            <div class="col2">
+                  <img class="homepagePicture" alt="Frank Ocean" src="images/frank.jpg"/>
+            </div>
+        </div>
+        <script>
+            document.getElementById("getStartedBtn").onclick = () => {
+                location.href = "createAccount.php";
+            };
+        </script>
+    </body>
+</html>
